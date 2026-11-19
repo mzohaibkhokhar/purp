@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f5" />
+  <title>A Little Something for Noor 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="petals" aria-hidden="true"></div>
+  <main class="app-shell">
+    <header class="topbar"><span class="brand-mark">✿</span><span>A LITTLE SURPRISE FOR NOOR</span><span class="top-heart">♥</span></header>
+
+    <section class="screen active" id="welcome">
+      <div class="hero-flower">🌷 🌸 🌷</div>
+      <p class="eyebrow">MADE WITH A LITTLE EXTRA CARE</p>
+      <h1>Hey Noor,<br><em>you make ordinary days beautiful.</em></h1>
+      <p class="lead">I made a tiny corner of the internet just for you. There are flowers, a few games, and one very important question…</p>
+      <div class="photo-frame"><div class="eye-art">♡</div><span>For the prettiest eyes and the loveliest smile</span></div>
+      <button class="primary" data-go="proposal">Open your surprise <span>→</span></button>
+      <p class="tiny-note">P.S. No pressure. Your happiness matters most. 💗</p>
+    </section>
+
+    <section class="screen" id="proposal">
+      <div class="big-emoji">💐</div><p class="eyebrow">THE IMPORTANT QUESTION</p>
+      <h2>Noor, would you like to go on a date with me?</h2>
+      <p class="lead">I'd love to spend some lovely time with you, share good food, laugh about silly things, and make a beautiful memory together.</p>
+      <div class="proposal-lines"><span>🌹 A little walk</span><span>🍰 Something sweet</span><span>✨ A memory to keep</span></div>
+      <div class="choice-row"><button class="primary" id="yesBtn">YES! 💖</button><button class="no-btn" id="noBtn">No 🙈</button></div>
+      <p class="tiny-note" id="noMessage">Choose whatever feels right to you.</p>
+    </section>
+
+    <section class="screen" id="food-category">
+      <p class="eyebrow">LET'S PLAN THE YUMMIEST PART</p><h2>What are you craving, Noor?</h2><p class="lead">Pick a food mood and I'll bring up some delicious choices.</p>
+      <div class="choice-grid">
+        <button class="category-card" data-category="fast"><span>🍔</span><b>Fast Food</b><small>Burgers, pizza & more</small></button>
+        <button class="category-card" data-category="desi"><span>🍛</span><b>Desi</b><small>Pakistani favourites</small></button>
+        <button class="category-card" data-category="chinese"><span>🥡</span><b>Chinese</b><small>Noodles, rice & more</small></button>
+      </div>
+      <button class="text-back" data-go="proposal">← Back</button>
+    </section>
+
+    <section class="screen" id="food-list">
+      <p class="eyebrow">THE MENU IS YOURS</p><h2 id="foodHeading">Choose your favourite</h2><p class="lead">Tap one dish (or the one you'd happily share).</p>
+      <div class="food-grid" id="foodGrid"></div>
+      <button class="text-back" data-go="food-category">← Change category</button>
+    </section>
+
+    <section class="screen" id="desserts">
+      <div class="big-emoji">🍓</div><p class="eyebrow">SAVE SOME ROOM</p><h2>Now, something sweet?</h2><p class="lead">Every lovely date deserves a little dessert.</p>
+      <div class="food-grid" id="dessertGrid"></div>
+    </section>
+
+    <section class="screen" id="time">
+      <div class="big-emoji">🕰️</div><p class="eyebrow">YOUR SCHEDULE, YOUR CHOICE</p><h2>What time works for you?</h2><p class="lead">Pick a time that feels comfortable. We can always adjust it.</p>
+      <div class="time-grid" id="timeGrid"></div>
+    </section>
+
+    <section class="screen" id="venue">
+      <div class="big-emoji">🏞️</div><p class="eyebrow">WHERE SHOULD OUR LITTLE ADVENTURE BE?</p><h2>Choose a place you'd love to visit</h2><p class="lead">A few beautiful places around Pakistan. Your choice is the special one.</p>
+      <div class="venue-grid" id="venueGrid"></div>
+    </section>
+
+    <section class="screen" id="summary">
+      <div class="big-emoji">💌</div><p class="eyebrow">A LITTLE DATE PLAN</p><h2>Look what we picked, Noor!</h2>
+      <div class="summary-card" id="summaryCard"></div>
+      <p class="lead">Thank you for making this little plan with me. The best part won't be the place or the food — it'll be the time we get to share.</p>
+      <button class="primary" id="finishBtn">A message for Noor 💗</button>
+    </section>
+
+    <section class="screen" id="message">
+      <div class="bouquet">💐🌷🌹🌸💐</div><p class="eyebrow">FROM MY HEART</p><h2>Dear Noor,</h2>
+      <div class="letter"><p>Your eyes have a way of making the world feel a little softer, and your smile can turn an ordinary moment into a favourite memory.</p><p>I don't know how to put every feeling into words, but I do know that you are genuinely special to me. I admire your little details, your presence, and the way you make moments brighter just by being yourself.</p><p>This website is a small gift, made with a big smile. Whatever your answer or whatever life brings, I hope you always feel appreciated, respected, and happy. 🌷</p><p class="signature">With lots of care,<br>someone who thinks you're wonderful 💗</p></div>
+      <button class="primary" data-go="games">Play a couple of little games 🎮</button>
+    </section>
+
+    <section class="screen" id="games">
+      <p class="eyebrow">JUST FOR FUN</p><h2>Let's play, Noor! 💕</h2><p class="lead">Two tiny games, made to bring you a smile.</p>
+      <div class="game-card"><h3>💗 Catch the hearts</h3><p>Tap as many hearts as you can before the timer ends!</p><div class="game-stats"><span>Score: <b id="score">0</b></span><span>Time: <b id="timer">15</b>s</span></div><div class="catch-area" id="catchArea"><span class="catch-hint">Press Start and catch hearts!</span></div><button class="primary small" id="startGame">Start game</button></div>
+      <div class="game-card"><h3>💌 Pick a heart</h3><p>One of these hearts has a tiny compliment for you.</p><div class="heart-picks"><button class="pick-heart" data-note="Your eyes are honestly unforgettable. 👀💗">💗</button><button class="pick-heart" data-note="Your smile deserves its own sunshine. ☀️">💖</button><button class="pick-heart" data-note="You make simple moments feel special. 🌷">💕</button></div><p class="heart-result" id="heartResult">Choose one, Noor!</p></div>
+      <button class="text-back" data-go="welcome">↺ Start from the beginning</button>
+    </section>
+    <div class="game-card">
+    <h2>💗 How Well Do You Know Me?</h2>
+    <p>Let's see how much you know about me, Noor!</p>
+    <button onclick="startLoveQuiz()">Play Game 💕</button>
+
+    <div id="loveQuiz" style="display:none;">
+        <h3 id="quizQuestion"></h3>
+
+        <div id="quizOptions"></div>
+
+        <p id="quizResult"></p>
+    </div>
+</div>
+<div class="flower-container"></div>
+<div class="sparkle-container"></div>
+    <footer>Made with flowers, good wishes & a whole lot of 💗</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
